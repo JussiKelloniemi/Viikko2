@@ -12,7 +12,7 @@ public class App
         boolean exit = false;
         
         while (!exit) {
-            System.out.println("1) Pistä siili puhumaan, 2) Luo uusi siili, 3) Juoksuta siiliä, 0) Lopeta");
+            System.out.println("1) Pistä siili puhumaan, 2) Luo uusi siili, 3) Juoksuta siiliä, 0) Lopeta ohjelma");
             if(sc.hasNext()) {
                 int i = 0;
                 String stringInput = sc.nextLine();
@@ -20,7 +20,7 @@ public class App
                 
                 switch (i) {
                     case 1:
-                    System.out.println("Mitä siili sanoo: ");
+                    System.out.println("Mitä siili sanoo:");
                     String input = sc.nextLine();
                     if (input.isEmpty())
                         newHedgehog.speak2();
